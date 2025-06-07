@@ -27,11 +27,18 @@ website-content-scraper/
 
 ### ES6 Modules
 - Uses native ES6 `import`/`export` syntax
+- Modern JavaScript module system
+- Tree-shaking support for better performance
+- `"type": "module"` in package.json
 
 ### Schema-Based Configuration
 - **Convict** for robust configuration management
+- Environment variable validation
+- Type checking and default values
+- Strict validation to catch configuration errors early
 
 ### StandardJS Compliant
+- Clean, consistent code style
 - No semicolons, single quotes
 - 2-space indentation
 
@@ -134,6 +141,63 @@ curl -X POST http://localhost:3000/scrape \
     "maxAdditionalPages": 3
   }'
 ```
+
+## Development Features
+
+### Modern JavaScript
+- ES6 modules with `import`/`export`
+- Async/await throughout
+- Template literals
+- Destructuring assignments
+- Arrow functions
+
+### Configuration Benefits
+- **Type Safety**: Convict validates configuration types
+- **Environment Flexibility**: Easy environment-specific configs
+- **Documentation**: Self-documenting configuration schema
+- **Error Prevention**: Fails fast on invalid configuration
+
+### Code Quality
+- StandardJS for consistent style
+- No comments/JSDoc for clean code
+- Descriptive function and variable names
+- Pure functions for better testability
+
+## Architecture Benefits
+
+### Modular Design
+- Clear separation of concerns
+- Easy to test individual components
+- Simple to extend functionality
+- Minimal coupling between modules
+
+### Configuration Management
+- Centralized configuration with validation
+- Environment-aware settings
+- Type-safe configuration access
+- Clear documentation of all settings
+
+### Modern Standards
+- Latest JavaScript features
+- Industry-standard tools (Convict, StandardJS)
+- Production-ready error handling
+- Graceful shutdown support
+
+## Security Considerations
+
+- Input validation on all endpoints
+- Request timeouts to prevent hanging
+- User agent rotation capability
+- No sensitive data exposure in errors (production)
+- Configuration validation prevents misconfigurations
+
+## Performance Features
+
+- Concurrent request limiting
+- Batch processing for multiple pages
+- Efficient content cleaning algorithms
+- Memory-conscious link discovery
+- Request timeout management
 
 ## Limitations
 
