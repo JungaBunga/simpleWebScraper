@@ -23,11 +23,20 @@ router.get('/analyses', async (req, res) => {
       count: analyses.length,
       companies: analyses.map(a => ({
         id: a._id,
+        url: a.url,
         companyName: a.companyName,
-        industry: a.industry,
-        location: a.location,
         businessDescription: a.businessDescription,
+        location: a.location,
+        targetCustomers: a.targetCustomers,
+        headcount: a.headcount,
+        financialInfo: a.financialInfo,
+        keyProducts: a.keyProducts,
+        industry: a.industry,
+        foundedYear: a.foundedYear,
         investmentHighlights: a.investmentHighlights,
+        risks: a.risks,
+        processingTime: a.processingTime,
+        tokensUsed: a.tokensUsed,
         processedAt: a.processedAt
       }))
     })
