@@ -53,7 +53,7 @@ website-content-scraper/
 ### 1. Clone and Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/JungaBunga/simpleWebScraper.git
 cd website-content-scraper
 npm install
 ```
